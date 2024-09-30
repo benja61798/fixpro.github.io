@@ -1,0 +1,206 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+  }
+  
+  
+  nav ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Convierte la lista en un contenedor flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #474c50; /* Fondo gris claro */
+    z-index: 999;
+    height: 50px;
+    width: auto;
+  }
+  
+  nav li {
+    margin: 0 10px; /* Espacio entre elementos */
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ebe7c1; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+  }
+  
+  nav a:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
+  }
+  .contenido {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(222, 222, 194);
+    width: 100%;
+  }
+  
+  .info {
+    text-align: justify;
+  }
+  
+  .galery {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .galery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px; 
+    align-items: center;
+  }
+
+  .galery a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    flex-wrap: wrap;
+  }
+  
+  .galery a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    position: relative; /* Agrega esto para posicionar el enlace */
+  }
+  
+  .gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item a {
+    bottom: 10px; /* Ajusta la posición vertical */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: blue;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .titulo, .info {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Apila los elementos verticalmente */
+    }
+  }
+
+  .pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    height: auto;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 70px;
+    height: auto;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+.tam{
+    height: 60px;
+    width: auto;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
